@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUG & CO. - L'Art de la Pause Café</title>
+    <link rel="stylesheet" href="templatemo-noir-fashion.css">
+    <style>
+        /* Petits ajustements pour les images de tasses */
+        .collection-thumbnail img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d4a373;stop-opacity:1" /> </linearGradient>
+                    </defs>
+                    <polygon points="50,10 20,50 50,90 80,50" fill="none" stroke="url(#logoGrad)" stroke-width="3"/>
+                    <circle cx="50" cy="50" r="5" fill="url(#logoGrad)"/>
+                </svg>
+                <span class="logo-text">MUG & CO.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#collections" class="nav-link">Boutique</a></li>
+                <li><a href="#featured" class="nav-link">Savoir-faire</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#collections" class="nav-cta">Commander</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#collections">Boutique</a></li>
+            <li><a href="#featured">Savoir-faire</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">Collection Hiver 2025</div>
+                <h1 class="hero-title">
+                    <span class="line"><span>Réinventez</span></span>
+                    <span class="line"><span>Votre <span class="accent">Pause</span></span></span>
+                    <span class="line"><span>Café</span></span>
+                </h1>
+                <p class="hero-description">
+                    Découvrez notre sélection de tasses artisanales et de mugs isothermes. 
+                    Chaque pièce est conçue pour transformer votre café matinal en un rituel d'exception.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Modèles Uniques</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">48H</span>
+                        <span class="stat-label">Livraison Rapide</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Céramique Durable</span>
+                    </div>
+                </div>
+                <div class="cta-group">
+                    <a href="#collections" class="cta-button primary">Voir les Tasses</a>
+                    <a href="#featured" class="cta-button outline">Notre Atelier</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide active">
+                            <img src="https://images.unsplash.com/photo-1517263904808-5dc91e3e70d7?q=80&w=2070&auto=format&fit=crop" alt="Femme avec tasse">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1974&auto=format&fit=crop" alt="Mug Artisanale">
+                        </div>
+                        <div class="carousel-overlay"></div>
+                    </div>
+                    <div class="floating-tags">
+                        <div class="tag">Fait Main</div>
+                        <div class="tag">Design Épuré</div>
+                        <div class="tag">Isotherme</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <h2 class="section-title">Nos Collections</h2>
+            <p class="section-subtitle">Trouvez le mug qui correspond à votre style</p>
+        </div>
+        
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">Tout</button>
+            <button class="tab-btn" data-category="ceramique">Céramique</button>
+            <button class="tab-btn" data-category="voyage">Voyage</button>
+            <button class="tab-btn" data-category="accessoires">Accessoires</button>
+            <button class="tab-btn" data-category="coffrets">Coffrets Cadeaux</button>
+        </div>
+
+        <div class="grid" id="collectionsGrid">
+            <div class="collection-card" data-category="ceramique">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=2070&auto=format&fit=crop" alt="Tasse Minimaliste">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Nouveauté</span>
+                    <h3 class="card-title">Le Minimaliste</h3>
+                    <p class="card-subtitle">Céramique Blanche</p>
+                    <p class="card-price">14,99 €</p>
+                </div>
+            </div>
+            
+            <div class="collection-card" data-category="coffrets">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1595981234058-a9302ddde64c?q=80&w=1974&auto=format&fit=crop" alt="Coffret Duo">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Édition Limitée</span>
+                    <h3 class="card-title">Coffret "Duo Matin"</h3>
+                    <p class="card-subtitle">Set de 2 Tasses</p>
+                    <p class="card-price">39,99 €</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="voyage">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1577937927133-66ef06acdf18?q=80&w=1974&auto=format&fit=crop" alt="Thermos Acier">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Best-Seller</span>
+                    <h3 class="card-title">L'Explorateur</h3>
+                    <p class="card-subtitle">Mug Isotherme Acier</p>
+                    <p class="card-price">24,99 €</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="accessoires">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1616429449852-c2c31802a438?q=80&w=1934&auto=format&fit=crop" alt="Sous-verre bois">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Tendance</span>
+                    <h3 class="card-title">Sous-Verre Zen</h3>
+                    <p class="card-subtitle">Bois de Chêne</p>
+                    <p class="card-price">9,99 €</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="ceramique">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1579930776510-1847c9451421?q=80&w=1974&auto=format&fit=crop" alt="Tasse Japonaise">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Artisanat</span>
+                    <h3 class="card-title">Kyoto Clay</h3>
+                    <p class="card-subtitle">Style Japonais</p>
+                    <p class="card-price">19,99 €</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="voyage">
+                <div class="collection-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1536939459926-301728717817?q=80&w=2070&auto=format&fit=crop" alt="Mug Camping">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Vintage</span>
+                    <h3 class="card-title">Le Baroudeur</h3>
+                    <p class="card-subtitle">Style Émaillé</p>
+                    <p class="card-price">12,99 €</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <div class="featured-container">
+            <div class="featured-hero">
+                <div class="featured-content">
+                    <span class="label">Fabriqué avec Passion</span>
+                    <h2>L'Art de la Céramique</h2>
+                    <p>Oubliez les tasses industrielles. Chez MUG & CO., nous collaborons avec des artisans potiers pour créer des pièces qui ont une âme. La cuisson à haute température garantit une résistance parfaite pour votre thé brûlant ou votre café glacé.</p>
+                    
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">👑</div>
+                            <div class="highlight-title">Qualité Premium</div>
+                            <div class="highlight-desc">Argile sélectionnée et émail sans plomb</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌱</div>
+                            <div class="highlight-title">Éco-responsable</div>
+                            <div class="highlight-desc">Emballages 100% recyclables sans plastique</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✨</div>
+                            <div class="highlight-title">Fait Main</div>
+                            <div class="highlight-desc">Chaque tasse est unique, tournée à la main</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#collections" class="feature-cta">Découvrir l'Atelier</a>
+                </div>
+                
+                <div class="featured-image-section">
+                    <div class="featured-image-grid">
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2071&auto=format&fit=crop" alt="Potier au travail">
+                        </div>
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1974&auto=format&fit=crop" alt="Étagère tasses">
+                        </div>
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1974&auto=format&fit=crop" alt="Café latte art">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonials-header">
+                    <h3>Avis de nos "Mug Lovers"</h3>
+                    <p class="section-subtitle">Ils adorent boire leur café avec nous</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "J'ai acheté la tasse 'Minimaliste'. Elle garde mon thé chaud super longtemps et la prise en main est parfaite. Je recommande !"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sarah Martin</h4>
+                                <p>Amoureuse de Thé</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "Le mug de voyage ne fuit absolument pas, ce qui est rare. Design très classe pour emmener au bureau."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marc Dubois</h4>
+                                <p>Architecte</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "Livraison ultra rapide et emballage sans plastique très soigné. C'était pour un cadeau et mon amie a adoré."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Alexia K.</h4>
+                                <p>Cliente vérifiée</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-subtitle">Une question sur une commande ou un produit ?</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Jean" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Dupont" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jean@exemple.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Ma commande..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Envoyer le message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Notre Boutique</h3>
+                            <p>15 Rue de la Céramique<br>
+                            75011 Paris, France<br>
+                            Quartier Oberkampf</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Téléphone</h3>
+                            <p>Service client : <a href="tel:+33123456789">01 23 45 67 89</a><br>
+                            Lun-Ven, 9h-18h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>Commandes : <a href="mailto:commandes@mug-and-co.com">commandes@mug-and-co.com</a><br>
+                            Infos : <a href="mailto:bonjour@mug-and-co.com">bonjour@mug-and-co.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <div class="map-container">
+                    <iframe src="
