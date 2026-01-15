@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K99YZDW9VE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K99YZDW9VE');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUG & CO. - L'Art de la Pause Café</title>
@@ -182,30 +173,7 @@
                 </div>
             </div>
 
-            <div class="collection-card" data-category="ceramique">
-                <div class="collection-thumbnail">
-                    <img src="https://images.unsplash.com/photo-1579930776510-1847c9451421?q=80&w=1974&auto=format&fit=crop" alt="Tasse Japonaise">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Artisanat</span>
-                    <h3 class="card-title">Kyoto Clay</h3>
-                    <p class="card-subtitle">Style Japonais</p>
-                    <p class="card-price">19,99 €</p>
-                </div>
             </div>
-
-            <div class="collection-card" data-category="voyage">
-                <div class="collection-thumbnail">
-                    <img src="https://images.unsplash.com/photo-1536939459926-301728717817?q=80&w=2070&auto=format&fit=crop" alt="Mug Camping">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Vintage</span>
-                    <h3 class="card-title">Le Baroudeur</h3>
-                    <p class="card-subtitle">Style Émaillé</p>
-                    <p class="card-price">12,99 €</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="featured" id="featured">
@@ -374,6 +342,73 @@
             
             <div class="map-section">
                 <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.373468315674391!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dfb871c22d7%3A0x67396c46a67f1b6!2s15%20Rue%20de%20la%20Roquette%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <iframe src="
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MUG & CO. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle Menu
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Effet scroll sur la navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Système de filtrage simple
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const cards = document.querySelectorAll('.collection-card');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Retirer active de tous les boutons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // Ajouter active au bouton cliqué
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                cards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
